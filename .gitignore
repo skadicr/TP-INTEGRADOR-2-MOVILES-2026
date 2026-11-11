@@ -1,0 +1,18 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+.DS_Store
+
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+serviceAccountKey*.json
+
+# Configuración local de Firebase (se crea a partir de firebase.example.js)
+src/firebase/firebase.js
