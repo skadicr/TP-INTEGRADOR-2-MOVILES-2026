@@ -9,16 +9,16 @@ export async function guardarFotoUri(uid, uri) {
   try {
     if (uri) await AsyncStorage.setItem(claveFoto(uid), uri);
     else await AsyncStorage.removeItem(claveFoto(uid));
-  } catch (e) {
-    console.error('Error guardando foto', e);
+  } catch (error) {
+    console.error('Error guardando foto', error);
   }
 }
 
 export async function leerFotoUri(uid) {
   try {
     return await AsyncStorage.getItem(claveFoto(uid));
-  } catch (e) {
-    console.error('Error leyendo foto', e);
+  } catch (error) {
+    console.error('Error leyendo foto', error);
     return null;
   }
 }

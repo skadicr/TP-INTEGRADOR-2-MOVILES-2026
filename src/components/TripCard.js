@@ -5,14 +5,14 @@ export default function TripCard({ viaje, onEdit, onDelete }) {
   return (
     <View style={styles.card}>
       <Text style={styles.desc}>{viaje.descripcion}</Text>
-      <Text style={styles.coords}>📍 {viaje.lat.toFixed(5)}, {viaje.lon.toFixed(5)}</Text>
-      <Text style={styles.fecha}>🕓 {viaje.fecha}</Text>
+      <Text style={styles.coords}> {viaje.lat.toFixed(5)}, {viaje.lon.toFixed(5)}</Text>
+      <Text style={styles.fecha}> {viaje.fecha}</Text>
       <View style={styles.actions}>
         <TouchableOpacity style={[styles.action, { backgroundColor: '#FB923C' }]} onPress={() => onEdit(viaje)}>
-          <Text style={styles.actionText}>✏️ Editar</Text>
+          <Text style={styles.actionText}> Editar</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[styles.action, { backgroundColor: '#EF4444' }]} onPress={() => onDelete(viaje)}>
-          <Text style={styles.actionText}>🗑️ Eliminar</Text>
+          <Text style={styles.actionText}> Eliminar</Text>
         </TouchableOpacity>
       </View>
     </View>
