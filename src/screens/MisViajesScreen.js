@@ -63,7 +63,7 @@ export default function MisViajesScreen({ navigation }) {
         />
       )}
 
-      <CustomButton title="➕ Nuevo Viaje" color="#22C55E" onPress={() => navigation.navigate('NuevoViaje')} />
+      <CustomButton title="Nuevo Viaje" color="#22C55E" onPress={() => navigation.navigate('NuevoViaje')} />
     </View>
   );
 }

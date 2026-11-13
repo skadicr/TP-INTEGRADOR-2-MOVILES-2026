@@ -1,4 +1,4 @@
-// src/components/CustomButton.js  (botón reutilizable)
+// (botón reutilizable)
 import { ActivityIndicator, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 export default function CustomButton({ title, onPress, color = '#3B82F6', loading = false, style }) {

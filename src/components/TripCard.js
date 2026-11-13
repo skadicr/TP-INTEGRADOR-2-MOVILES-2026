@@ -1,12 +1,13 @@
 // src/components/TripCard.js  (tarjeta reutilizable de un viaje)
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { formatearFecha } from '../utils/fecha';
 
 export default function TripCard({ viaje, onEdit, onDelete }) {
   return (
     <View style={styles.card}>
       <Text style={styles.desc}>{viaje.descripcion}</Text>
       <Text style={styles.coords}> {viaje.lat.toFixed(5)}, {viaje.lon.toFixed(5)}</Text>
-      <Text style={styles.fecha}> {viaje.fecha}</Text>
+      <Text style={styles.fecha}> {formatearFecha(viaje.fecha)}</Text>
       <View style={styles.actions}>
         <TouchableOpacity style={[styles.action, { backgroundColor: '#FB923C' }]} onPress={() => onEdit(viaje)}>
           <Text style={styles.actionText}> Editar</Text>

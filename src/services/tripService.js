@@ -22,7 +22,9 @@ export const createTrip = async (trip) => {
 export const getTrips = async (userId) => {
   const tripsQuery = query(collection(db, 'viajes'), where('userId', '==', userId));
   const snapshot = await getDocs(tripsQuery);
-  return snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
+  const trips = snapshot.docs.map((documento) => ({ id: documento.id, ...documento.data() }));
+  // return snapshot.docs.map((d) => ({ id: d.id, ...d.data() }));
+  return trips.sort((a, b) => String(a.fecha).localeCompare(String(b.fecha))); // ordenar por fecha
 };
 
 //* UPDATE

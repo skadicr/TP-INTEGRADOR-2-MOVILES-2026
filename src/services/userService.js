@@ -1,4 +1,4 @@
-// src/services/userService.js
+
 //* Perfil del usuario: documento usuarios/{uid} en Firestore
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../firebase/firebase';
@@ -14,5 +14,6 @@ export const getUserProfile = async (uid) => {
 
 //* Actualiza solo los campos indicados, sin reemplazar el resto del perfil
 export const updateUserProfile = async (uid, data) => {
-  await updateDoc(doc(db, 'usuarios', uid), data);
+  // await updateDoc(doc(db, 'usuarios', uid), data);
+  await setDoc(doc(db, 'usuarios', uid), data, { merge: true }); // merge: true para no reemplazar el resto del documento
 };

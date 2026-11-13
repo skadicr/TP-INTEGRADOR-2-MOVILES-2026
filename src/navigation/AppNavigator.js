@@ -1,4 +1,4 @@
-// src/navigation/AppNavigator.js
+
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { useAuth } from '../context/AuthContext';

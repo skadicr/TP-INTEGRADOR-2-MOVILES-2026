@@ -10,14 +10,14 @@ export default function InicioScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>🌍 TrackMyTrips</Text>
+      <Text style={styles.title}>TrackMyTrips</Text>
       <Text style={styles.subtitle}>{user.email}</Text>
 
-      <CustomButton title="👤 Mi Perfil" color="#22C55E" onPress={() => navigation.navigate('Perfil')} style={styles.btn} />
-      <CustomButton title="➕ Nuevo Viaje" color="#3B82F6" onPress={() => navigation.navigate('NuevoViaje')} style={styles.btn} />
-      <CustomButton title="🧳 Mis Viajes" color="#8B5CF6" onPress={() => navigation.navigate('MisViajes')} style={styles.btn} />
-      <CustomButton title="🗺️ Ver Mapa" color="#14B8A6" onPress={() => navigation.navigate('Mapa')} style={styles.btn} />
-      <CustomButton title="🚪 Cerrar sesión" color="#EF4444" onPress={logoutUser} style={styles.btn} />
+      <CustomButton title=" Mi Perfil" color="#22C55E" onPress={() => navigation.navigate('Perfil')} style={styles.btn} />
+      <CustomButton title=" Nuevo Viaje" color="#3B82F6" onPress={() => navigation.navigate('NuevoViaje')} style={styles.btn} />
+      <CustomButton title="Mis Viajes" color="#8B5CF6" onPress={() => navigation.navigate('MisViajes')} style={styles.btn} />
+      <CustomButton title="Ver Mapa" color="#14B8A6" onPress={() => navigation.navigate('Mapa')} style={styles.btn} />
+      <CustomButton title="Cerrar sesión" color="#EF4444" onPress={logoutUser} style={styles.btn} />
     </View>
   );
 }

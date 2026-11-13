@@ -28,7 +28,7 @@ export default function LoginScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>🌍 TrackMyTrips</Text>
+      <Text style={styles.title}>TrackMyTrips</Text>
 
       <TextInput
         style={styles.input}

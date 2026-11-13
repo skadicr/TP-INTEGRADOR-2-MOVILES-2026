@@ -91,8 +91,8 @@ export default function PerfilScreen() {
       )}
 
       <View style={styles.row}>
-        <CustomButton title="🖼️ Galería" color="#8B5CF6" onPress={elegirDeGaleria} style={{ flex: 1 }} />
-        <CustomButton title="📸 Cámara" color="#14B8A6" onPress={sacarFoto} style={{ flex: 1 }} />
+        <CustomButton title="Galería" color="#8B5CF6" onPress={elegirDeGaleria} style={{ flex: 1 }} />
+        <CustomButton title="Cámara" color="#14B8A6" onPress={sacarFoto} style={{ flex: 1 }} />
       </View>
 
       <Text style={styles.email}>{user.email}</Text>
@@ -105,7 +105,7 @@ export default function PerfilScreen() {
         onChangeText={setEdad}
       />
 
-      <CustomButton title="💾 Guardar" color="#22C55E" onPress={guardar} loading={saving} />
+      <CustomButton title="Guardar" color="#22C55E" onPress={guardar} loading={saving} />
     </View>
   );
 }

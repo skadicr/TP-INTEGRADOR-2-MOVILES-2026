@@ -63,11 +63,11 @@ export default function NuevoViajeScreen({ navigation, route }) {
         onChangeText={setDescripcion}
       />
 
-      <CustomButton title="📍 Obtener ubicación" color="#3B82F6" onPress={obtenerUbicacion} />
+      <CustomButton title="Obtener ubicación" color="#3B82F6" onPress={obtenerUbicacion} />
 
       {pos && <Text style={styles.coords}>Lat: {pos.lat.toFixed(5)} | Lon: {pos.lon.toFixed(5)}</Text>}
 
-      <CustomButton title="💾 Guardar" color="#22C55E" onPress={guardarViaje} loading={saving} />
+      <CustomButton title="Guardar" color="#22C55E" onPress={guardarViaje} loading={saving} />
     </View>
   );
 }
